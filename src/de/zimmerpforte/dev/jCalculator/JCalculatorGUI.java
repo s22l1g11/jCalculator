@@ -2,6 +2,7 @@ package de.zimmerpforte.dev.JCalculator;
 
 
 import java.awt.Container;
+import java.awt.HeadlessException;
 import java.io.*;
 import java.net.URL;
 

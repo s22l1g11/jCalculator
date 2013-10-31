@@ -1,9 +1,11 @@
 package de.zimmerpforte.dev.JCalculator;
 
 import java.awt.Container;
+import java.awt.HeadlessException;
+import java.awt.Label;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.*;
+import java.io.IOException;
 
 import javax.swing.JButton;
 import javax.swing.JOptionPane;
@@ -24,6 +26,8 @@ public class JCalculatorGUIButtons {
 		private JButton sumSign = new JButton ("=");
 		// numeric buttons
 		private JButton[] numericButtons = new JButton[10];
+		// create a label, even if this isn't a class for labels! I know, I know!
+		Label yourIpAddress;
 	
 		
 	// start() is like the constructor but is used the create a controlled start
@@ -121,8 +125,9 @@ public class JCalculatorGUIButtons {
 			);
 		}
 		
-		jCalculatorSurface = new JPanel ();     
-	
+		
+		jCalculatorSurface = new JPanel ();
+		
 		jCalculatorSurface.add (plusSign);    
 		jCalculatorSurface.add (minusSign);
 		jCalculatorSurface.add (multiplicationSign);
@@ -136,4 +141,5 @@ public class JCalculatorGUIButtons {
 		
 	return jCalculatorSurface;  
 	}
+	
 }
