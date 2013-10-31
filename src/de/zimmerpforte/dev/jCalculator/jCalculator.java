@@ -1,5 +1,10 @@
-package de.zimmerpforte.dev.jCalculator;
+package de.zimmerpforte.dev.JCalculator;
 
-public class jCalculator {
+public class JCalculator {
 
+	public static void main (String[] args)
+	{
+		JCalculatorGUI jCalculatorGui = new JCalculatorGUI();
+	}
+	
 }
