@@ -34,6 +34,11 @@ public class JCalculatorGUI extends JFrame {
 	}
 
 	
+	/*
+	 * the following function is copy&pasted from:
+	 * http://stackoverflow.com/questions/2939218/getting-the-external-ip-address-in-java
+	 */
+	
 	private void getIpAddress() throws IOException
 	{
 		URL whatismyip = new URL("http://checkip.amazonaws.com");
