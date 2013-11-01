@@ -21,7 +21,7 @@ public class JCalculatorGUI extends JFrame {
 		
 		jCalculatorFrame = new JFrame();
 		jCalculatorFrame.setTitle("JCalculator - Alpha");
-		jCalculatorFrame.setSize (500,480);
+		jCalculatorFrame.setSize (450,350);
 		jCalculatorFrame.setResizable(false);
 		jCalculatorFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		//create buttons

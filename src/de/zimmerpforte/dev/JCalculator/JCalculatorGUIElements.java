@@ -22,7 +22,7 @@ import javax.swing.JTextField;
 public class JCalculatorGUIElements {
 
 	private JPanel jCalculatorSurface;
-	private Container jCalculatorContentPane;
+	private Box jCalculatorLowerBox;
 	
 	/*
 	 * define buttons
@@ -145,8 +145,9 @@ public class JCalculatorGUIElements {
 		 * create JTextField and set it uneditable
 		 */
 		result = new JTextField();
+		result.setVisible(true);
 		result.setEditable(false);
-		
+
 		/*
 		 * create JPanel
 		 */
@@ -154,8 +155,10 @@ public class JCalculatorGUIElements {
 		
 		/*
 		 * create a new GridLayout();
+		 * create boxlayout
 		 */
 		//jCalculatorSurface.setLayout(new GridLayout(4,4));
+		jCalculatorLowerBox = Box.createHorizontalBox();
 		
 		/*
 		 * add JTextField to JPanel
@@ -183,12 +186,19 @@ public class JCalculatorGUIElements {
 		/*
 		 * add sign-buttons to jCalculatorSurface
 		 */
-		jCalculatorSurface.add (plusSign);    
+		jCalculatorLowerBox.add(plusSign);
+		jCalculatorLowerBox.add(minusSign);
+		jCalculatorLowerBox.add(multiplicationSign);
+		jCalculatorLowerBox.add(devisionSign);
+		jCalculatorLowerBox.add(sumSign);
+		
+		/*jCalculatorSurface.add (plusSign);    
 		jCalculatorSurface.add (minusSign);
 		jCalculatorSurface.add (multiplicationSign);
 		jCalculatorSurface.add (devisionSign);
-		jCalculatorSurface.add (sumSign);
+		jCalculatorSurface.add (sumSign);*/
 		
+		jCalculatorSurface.add(jCalculatorLowerBox);
 		
 		/*
 		 * return jCalculatorSurface
