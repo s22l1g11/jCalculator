@@ -17,7 +17,7 @@ public class JCalculatorGUI extends JFrame {
 	
 	public JCalculatorGUI()
 	{
-		JCalculatorGUIElements jCalcGUIButtons = new JCalculatorGUIElements();
+		JCalculatorGUIElements jCalcGUIElements = new JCalculatorGUIElements();
 		
 		jCalculatorFrame = new JFrame();
 		jCalculatorFrame.setTitle("JCalculator - Alpha");
@@ -25,7 +25,7 @@ public class JCalculatorGUI extends JFrame {
 		jCalculatorFrame.setResizable(false);
 		jCalculatorFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		//create buttons
-		jCalculatorFrame.setContentPane (jCalcGUIButtons.start());
+		jCalculatorFrame.setContentPane (jCalcGUIElements.start());
 		jCalculatorFrame.setVisible (true);
 		try {
 			getIpAddress();

@@ -146,7 +146,7 @@ public class JCalculatorGUIElements {
 		 */
 		result = new JTextField();
 		result.setVisible(true);
-		result.setEditable(false);
+		result.setEditable(true);
 
 		/*
 		 * create JPanel
